@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(0, 47, 59);
+}
+
+header {
+    background-color: rgb(2, 179, 192);
+    color: rgb(0, 47, 59);;
+}
+
+main {
+    background-color: rgb(0, 47, 59);
+    color: rgb(2, 179, 192);
+}
+
+footer {
+    background-color: rgb(2, 179, 192);
+    color: rgb(0, 47, 59);;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    background-color: rgb(2, 179, 192);
+    color: rgb(0, 47, 59);;
+    list-style-type: none;
+}
+
+a:link {
+    color: rgb(255, 120, 210);
+}
+
+a:visited {
+    color: rgb(255, 120, 210);
+}
+
+a:hover {
+    color: rgb(255, 161, 235);
+}
+
+a:active {
+    color: rgb(248, 55, 255);
+}
+
+.listlink {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.listlink:link {
+    color: rgb(187, 58, 144);
+}
+
+.listlink:visited {
+    color: rgb(187, 58, 144);
+}
+
+.listlink:hover {
+    color: rgb(252, 35, 223);}
+
+.listlink:active {
+    color: rgb(88, 10, 62);
+}
+
+h2 {
+    margin-top: 9px;
+    font-weight: bold;
+}
