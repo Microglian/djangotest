@@ -3,6 +3,5 @@ __pycache__
 *.log
 *.pot
 *.pyc
-Taskinator/db.sqlite3
 media
 *.bak

@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect # type: ignore
 from .models import Task
-from .forms import TaskForm
+from .forms import TaskForm, UserForm
 
 # Create your views here.
 def task_list(request):
@@ -67,3 +67,19 @@ def task_delete(request, pk):
     task = get_object_or_404(Task, pk=pk)
     task.delete()
     return redirect('task_list')
+
+
+def user_create(request):
+    """
+    Creates a new user
+    """
+    
+    if request.method == 'POST':
+        form = UserForm(request.POST)
+        if form.is_valid():
+            task = form.save(commit=False)
+            task.save()
+            return redirect('task_list')
+    else:
+        form = UserForm()
+    return render(request, 'user_form.html', {'form': form})

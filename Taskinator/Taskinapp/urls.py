@@ -1,5 +1,5 @@
 from django.urls import path # type: ignore
-from .views import task_list, task_details, task_create, task_update, task_delete
+from .views import task_list, task_details, task_create, task_update, task_delete, user_create
 
 urlpatterns = [
     # List of tasks
@@ -16,4 +16,7 @@ urlpatterns = [
     
     # Task details
     path('task/<int:pk>/delete/', task_delete, name='task_delete'),
+    
+    # New User
+    path('user/new/', user_create, name='user_create'),
 ]
